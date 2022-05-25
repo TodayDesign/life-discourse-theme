@@ -1,0 +1,21 @@
+{
+  "about_url": null,
+  "license_url": null,
+  "assets": {
+  },
+  "name": "Life",
+  "color_schemes": {
+    "default": {
+      "primary": "242424",
+      "secondary": "F9FCFF",
+      "tertiary": "3b6e04",
+      "quaternary": "7E8B93",
+      "header_background": "F9FCFF",
+      "header_primary": "122b43",
+      "highlight": "E6CB37",
+      "danger": "f43920",
+      "success": "3e6a00",
+      "love": "C16AD7"
+    }
+  }
+}
