@@ -32,6 +32,15 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-semibold !important;
+}
+
 .nav-pills>li>a {
     position: relative;
     padding: 10px 5px;
@@ -106,6 +115,7 @@ body {
     background: $color-white;
     color: $color-green-dark;
     border-color: $color-green;
+    box-shadow: none;
 
     &:hover,
     &:focus {
@@ -182,4 +192,25 @@ input[type="text"] {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
+}
+
+.search-input {
+    border-radius: 9px;
+}
+
+.user-secondary-navigation .nav-stacked a.active,
+.empty-state .empty-state-title,
+.stats-section .value {
+    font-weight: $font-weight-semibold;
+}
+
+#list-area .top-lists h2 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-header .d-icon {
+    font-size: 16px;
+    padding: 0;
+    box-shadow: none;
 }
