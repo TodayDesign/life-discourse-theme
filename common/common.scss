@@ -214,3 +214,20 @@ input[type="text"] {
     padding: 0;
     box-shadow: none;
 }
+
+.modal-footer {
+    padding: 1.5em 2em;
+}
+
+.modal-inner-container {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    background-color: $color-green;
+}
+
+.login-form {
+    padding-bottom: 2rem;
+}
