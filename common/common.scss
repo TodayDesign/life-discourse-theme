@@ -226,6 +226,7 @@ input[type="text"] {
 
 .modal-backdrop {
     background-color: $color-green;
+    opacity: .8 !important;
 }
 
 .login-form {
