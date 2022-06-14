@@ -234,6 +234,14 @@ input[type="text"] {
 }
 
 .alert {
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 1.4;
+
+    a {
+        font-weight: $font-weight-semibold;
+        color: $color-text;
+        border-bottom-color: $color-focus;
+    }
 }
