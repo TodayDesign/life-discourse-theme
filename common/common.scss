@@ -242,6 +242,33 @@ input[type="text"] {
     a {
         font-weight: $font-weight-semibold;
         color: $color-text;
-        border-bottom-color: $color-focus;
+        border-bottom: 2px solid $color-focus;
     }
+}
+
+.list-controls {
+    margin-top: 2rem;
+}
+
+#reply-control .save-or-cancel .cancel {
+    text-transform: capitalize;
+}
+
+.d-header #site-logo {
+    height: 68px;
+    margin-top: 10px;
+}
+
+.d-header {
+    height: 54px;
+}
+
+#search-button::after {
+    content: 'Search';
+    display: inline-block;
+}
+
+#toggle-hamburger-menu::after {
+    content: 'Menu';
+    display: inline-block;
 }
