@@ -272,3 +272,11 @@ input[type="text"] {
     content: 'Menu';
     display: inline-block;
 }
+
+.header-dropdown-toggle a {
+    width: auto;
+
+    svg {
+        width: 1em;
+    }
+}
