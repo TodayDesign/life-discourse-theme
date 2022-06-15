@@ -28,6 +28,8 @@ $color-black: #000000;
 
 $font-weight-semibold: 500;
 
+$box-shadow: 0px 3px 8px rgba(29, 26, 56, 0.12);
+
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
@@ -107,7 +109,7 @@ h6 {
 
 .btn {
     background: $color-white;
-    box-shadow: 0px 3px 8px rgba(29, 26, 56, 0.12);
+    box-shadow: $box-shadow;
     color: $color-green-dark;
 }
 
@@ -139,7 +141,7 @@ h6 {
 .select-kit-header {
     padding: 11px 19px !important;
     border-radius: 9px;
-    border: 1px solid #cecece !important;
+    border: 2px solid #cecece !important;
 }
 
 #navigation-bar {
@@ -269,6 +271,7 @@ input[type="text"] {
     position: static !important;
     height: auto !important;
     border: none !important;
+    font-weight: $font-weight-semibold;
 }
 
 #toggle-hamburger-menu::after {
@@ -277,6 +280,7 @@ input[type="text"] {
     position: static !important;
     height: auto !important;
     border: none !important;
+    font-weight: $font-weight-semibold;
 }
 
 .d-header-icons {
@@ -291,6 +295,7 @@ input[type="text"] {
             padding-right: 0;
             padding-bottom: 0;
             padding-top: 0;
+            font-size: 16px !important;
 
             &::before {
                 content: '';
@@ -314,6 +319,7 @@ input[type="text"] {
         
             svg {
                 width: 1em;
+                margin-right: .25rem;
             }
         }
 
@@ -348,5 +354,70 @@ b, strong {
 
 .unread-high-priority-notifications {
     background: $color-orange-mid;
-    color: $color-text;
+    color: $color-text !important;
+}
+
+.avatar {
+    border-radius: 0 !important;
+    clip-path: url(#svgclip1);
+}
+
+.badge-category-bg {
+    clip-path: url(#svgclip2);
+}
+
+.heatmap-high,
+.heatmap-med,
+.heatmap-low {
+    color: $color-orange-dark !important;
+}
+
+.heatmap-high {
+    font-weight: $font-weight-semibold !important;
+}
+
+.select-kit-filter {
+    svg {
+        display: none;
+    }
+}
+
+.select-kit-header-wrapper {
+    color: $color-green-dark !important;
+    font-size: 16px !important;
+}
+
+.select-kit.is-expanded .select-kit-body {
+    border-radius: 9px;
+    box-shadow: $box-shadow;
+}
+
+.select-kit.single-select.is-expanded .select-kit-header:not(.btn), .select-kit.single-select .select-kit-header:not(.btn):focus, .select-kit.single-select .select-kit-header:not(.btn):active {
+    outline: none;
+    border-color: $color-green !important;
+}
+
+body {
+    padding-bottom: 4rem;
+}
+
+.show-all {
+    color: $color-green-dark !important;
+
+    &::after {
+        content: 'Show all'
+    }
+}
+
+.menu-panel .panel-body-bottom .btn {
+    color: $color-green-dark !important;
+    background: transparent !important;
+
+    svg {
+        display: none;
+    }
+}
+
+button.widget-button.btn.btn.btn-default.notifications-dismiss.btn-icon-text::after {
+    content: ' all';
 }

@@ -16,7 +16,10 @@
       "highlight": "E6CB37",
       "danger": "f43920",
       "success": "3e6a00",
-      "love": "C16AD7"
+      "love": "C16AD7",
+      "gold": "FFE924",
+      "silver": "85d7e9",
+      "bronze": "ba96e3"
     }
   }
 }
