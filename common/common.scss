@@ -266,17 +266,74 @@ input[type="text"] {
 #search-button::after {
     content: 'Search';
     display: inline-block;
+    position: static !important;
+    height: auto !important;
+    border: none !important;
 }
 
 #toggle-hamburger-menu::after {
     content: 'Menu';
     display: inline-block;
+    position: static !important;
+    height: auto !important;
+    border: none !important;
 }
 
-.header-dropdown-toggle a {
-    width: auto;
+.d-header-icons {
+    .hamburger-dropdown,
+    .search-dropdown {
+        margin-right: 2rem;
 
-    svg {
-        width: 1em;
-    }
+        a {
+            width: auto;
+            position: relative;
+            padding-left: 0;
+            padding-right: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: $color-green-mid;
+                height: 2px;
+                width: 100%;
+                border-radius: 1px;
+            }
+
+            &:hover {
+                color: scale-color($color-green-dark, $lightness: -25%);
+                background: transparent !important;
+        
+                &::before {
+                    background-color: $color-green-mid;
+                }
+            }
+        
+            svg {
+                width: 1em;
+            }
+        }
+
+        &.active a {
+            border-color: transparent !important;
+        }
+    }    
+}
+
+.title-wrapper {
+    margin-top: 2rem;
+}
+
+b, strong {
+    font-weight: $font-weight-semibold;
+}
+
+.search-link svg {
+    display: none;
+}
+
+.search-menu .searching {
+    position: static;
+    margin-right: .75rem;
 }
