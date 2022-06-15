@@ -260,7 +260,7 @@ input[type="text"] {
 }
 
 .d-header {
-    height: 54px;
+    box-shadow: 0px 3px 8px rgba(29, 26, 56, 0.12);
 }
 
 #search-button::after {
@@ -289,6 +289,8 @@ input[type="text"] {
             position: relative;
             padding-left: 0;
             padding-right: 0;
+            padding-bottom: 0;
+            padding-top: 0;
 
             &::before {
                 content: '';
@@ -296,9 +298,9 @@ input[type="text"] {
                 left: 0;
                 bottom: 0;
                 background-color: $color-green-mid;
-                height: 2px;
+                height: 3px;
                 width: 100%;
-                border-radius: 1px;
+                border-radius: 1.5px;
             }
 
             &:hover {
@@ -336,4 +338,15 @@ b, strong {
 .search-menu .searching {
     position: static;
     margin-right: .75rem;
+}
+
+.d-header .title-wrapper {
+    margin-top: 0;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.unread-high-priority-notifications {
+    background: $color-orange-mid;
+    color: $color-text;
 }
