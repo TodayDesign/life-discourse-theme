@@ -13,3 +13,8 @@ document.documentElement.style.setProperty('--highlight-medium', '#F3F3F3');
 
 // Update base font size
 document.documentElement.style.setProperty('--base-font-size', '1em');
+
+// Update gold, silver bronze
+document.documentElement.style.setProperty('--gold', '#FFE924');
+document.documentElement.style.setProperty('--silver', '#85d7e9');
+document.documentElement.style.setProperty('--bronze', '#ba96e3');
