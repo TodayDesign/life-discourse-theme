@@ -241,7 +241,8 @@ input[type="text"] {
     font-size: 14px;
     line-height: 1.4;
 
-    a {
+    a,
+    button {
         font-weight: $font-weight-semibold;
         color: $color-text;
         border-bottom: 2px solid $color-focus;
@@ -258,7 +259,8 @@ input[type="text"] {
 
 .d-header #site-logo {
     height: 68px;
-    margin-top: 30px;
+    position: relative;
+    top: 30px;
 }
 
 .d-header {
@@ -420,4 +422,12 @@ body {
 
 button.widget-button.btn.btn.btn-default.notifications-dismiss.btn-icon-text::after {
     content: ' all';
+}
+
+.select-kit.combo-box.tag-drop .select-kit-row[data-value="all-tags"], .select-kit.combo-box.tag-drop .select-kit-row[data-value="no-tags"] {
+    font-weight: $font-weight-semibold;
+}
+
+.consent_banner {
+    background: $color-green-mid;
 }
