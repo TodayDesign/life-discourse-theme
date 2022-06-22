@@ -11,6 +11,7 @@ document.documentElement.style.setProperty('--heading-font-family', `'Poppins', 
 // Highlight medium
 document.documentElement.style.setProperty('--highlight-medium', '#F3F3F3');
 document.documentElement.style.setProperty('--danger-medium', '#c75218');
+document.documentElement.style.setProperty('--primary-medium', '#cccccc');
 
 // Update base font size
 document.documentElement.style.setProperty('--base-font-size', '1em');
