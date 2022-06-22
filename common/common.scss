@@ -138,6 +138,13 @@ h6 {
     box-shadow: none;
 }
 
+.btn-danger {
+    background: $color-orange-dark;
+    color: $color-white;
+    border-color: transparent;
+    box-shadow: none;
+}
+
 .select-kit-header {
     padding: 11px 19px !important;
     border-radius: 9px;
@@ -232,7 +239,7 @@ input[type="text"] {
 }
 
 .login-form {
-    padding-bottom: 2rem;
+    padding-bottom: 2rem !important;
 }
 
 .alert {
