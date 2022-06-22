@@ -252,10 +252,12 @@ input[type="text"] {
     .close {
         border-radius: 0;
         box-shadow: none;
+        border: none;
 
-        &::before {
+        &::after {
             content: 'Dismiss';
             font-size: 14px;
+            border-bottom: 2px solid $color-focus;
         }
     }
 }
