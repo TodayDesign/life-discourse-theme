@@ -253,11 +253,16 @@ input[type="text"] {
         border-radius: 0;
         box-shadow: none;
         border: none;
+        top: 0.5em;
 
         &::after {
             content: 'Dismiss';
             font-size: 14px;
             border-bottom: 2px solid $color-focus;
+        }
+
+        .d-icon {
+            color: $color-text;
         }
     }
 }
