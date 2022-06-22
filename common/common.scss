@@ -240,7 +240,7 @@ input[type="text"] {
     border-radius: 9px;
     font-size: 14px;
     line-height: 1.4;
-    background: $color-green;
+    background: $color-green-mid !important;
 
     a,
     button {
@@ -250,9 +250,13 @@ input[type="text"] {
     }
 
     .close {
-        content: 'Dismiss';
-        font-size: 14px;
-        border-radius: none;
+        border-radius: 0;
+        box-shadow: none;
+
+        &::before {
+            content: 'Dismiss';
+            font-size: 14px;
+        }
     }
 }
 
