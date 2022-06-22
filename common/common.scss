@@ -431,3 +431,7 @@ button.widget-button.btn.btn.btn-default.notifications-dismiss.btn-icon-text::af
 .consent_banner {
     background: $color-green-mid;
 }
+
+.latest-topic-list .posts-map, .top-topic-list .posts-map {
+    font-weight: $font-weight-semibold;
+}
