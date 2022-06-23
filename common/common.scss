@@ -322,6 +322,10 @@ input[type="text"] {
     .search-dropdown {
         margin-right: 2rem;
 
+        @media only screen and (max-width: 480px) {
+            margin-right: 1rem;
+        }
+
         a {
             width: auto;
             position: relative;
