@@ -254,6 +254,11 @@ input[type="text"] {
     line-height: 1.4;
     background: $color-green-mid !important;
 
+    > span {
+        padding-right: 80px;
+        display: block;
+    }
+
     a,
     button {
         font-weight: $font-weight-semibold;
