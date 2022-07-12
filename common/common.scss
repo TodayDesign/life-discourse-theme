@@ -324,8 +324,11 @@ input[type="text"] {
 
 .headerLink a {
     font-size: 16px !important;
-    color: $color-green-dark;
+    color: $color-green-dark !important;
     font-weight: $font-weight-semibold;
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
     &::before {
         content: '';
