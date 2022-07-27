@@ -531,3 +531,10 @@ button.widget-button.btn.btn.btn-default.notifications-dismiss.btn-icon-text::af
     box-shadow: $box-shadow;
     border-radius: 12px;
 }
+
+.full-name.staff::after {
+    content: 'Admin';
+    font-weight: normal;
+    margin-left: 6px;
+    font-size: 75%;
+}
